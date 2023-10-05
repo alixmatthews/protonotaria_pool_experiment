@@ -1,0 +1,921 @@
+IQ-TREE 1.6.12 built Mar 23 2020
+
+Input file name: ./iqtree_20220901/Experimental_PROW_plus_all_others_COI.fasta.mafftaligned.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 642587
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 156 sequences with 1506 nucleotide sites
+Number of constant sites: 960 (= 63.745% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 960 (= 63.745% of all sites)
+Number of parsimony informative sites: 458
+Number of distinct site patterns: 526
+
+ModelFinder
+-----------
+
+Best-fit model according to AICc: TIM3+F+I+G4
+
+List of models sorted by AICc scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+TIM3+F+I+G4     -10965.4353  22536.8705 + 0.2581  22690.1351 + 0.4590  24147.9859 + 0.4376
+GTR+F+I+G4      -10962.4984  22534.9968 + 0.6586  22690.5468 + 0.3736  24156.7466 - 0.0055
+TIM+F+I+G4      -10967.0496  22540.0991 + 0.0514  22693.3637 + 0.0914  24151.2145 + 0.0871
+TN+F+I+G4       -10969.4658  22542.9316 - 0.0125  22695.0613 - 0.0391  24148.7297 + 0.3017
+TIM2+F+I+G4     -10969.0529  22544.1058 - 0.0069  22697.3703 - 0.0123  24155.2211 - 0.0117
+TPM3+F+I+G4     -10971.0182  22546.0365 - 0.0026  22698.1662 - 0.0083  24151.8346 + 0.0639
+TPM3u+F+I+G4    -10971.0292  22546.0583 - 0.0026  22698.1880 - 0.0082  24151.8565 + 0.0632
+TVM+F+I+G4      -10968.0527  22544.1054 - 0.0069  22698.5100 - 0.0070  24160.5379 - 0.0008
+K3Pu+F+I+G4     -10973.4969  22550.9937 - 0.0002  22703.1234 - 0.0007  24156.7919 - 0.0054
+HKY+F+I+G4      -10975.7471  22553.4943 - 0.0001  22704.4943 - 0.0003  24153.9752 - 0.0219
+TPM2+F+I+G4     -10975.5469  22555.0937 - 0.0000  22707.2234 - 0.0001  24160.8918 - 0.0007
+TPM2u+F+I+G4    -10975.5774  22555.1549 - 0.0000  22707.2845 - 0.0001  24160.9530 - 0.0007
+TIM3+F+R3       -10988.2797  22586.5595 - 0.0000  22742.1095 - 0.0000  24208.3093 - 0.0000
+GTR+F+R3        -10985.3356  22584.6712 - 0.0000  22742.5276 - 0.0000  24217.0554 - 0.0000
+TIM3+F+R4       -10988.3235  22590.6470 - 0.0000  22748.5034 - 0.0000  24223.0312 - 0.0000
+GTR+F+R4        -10985.3783  22588.7566 - 0.0000  22748.9406 - 0.0000  24231.7753 - 0.0000
+TVM+F+R3        -10992.1260  22596.2520 - 0.0000  22752.9526 - 0.0000  24223.3190 - 0.0000
+TVM+F+R4        -10992.1609  22600.3218 - 0.0000  22759.3393 - 0.0000  24238.0232 - 0.0000
+TIM+F+R3        -10997.6242  22605.2483 - 0.0000  22760.7983 - 0.0000  24226.9981 - 0.0000
+TIM2+F+R3       -10998.1249  22606.2498 - 0.0000  22761.7998 - 0.0000  24227.9996 - 0.0000
+TIM+F+R4        -10997.6459  22609.2918 - 0.0000  22767.1482 - 0.0000  24241.6760 - 0.0000
+TIM2+F+R4       -10998.1542  22610.3084 - 0.0000  22768.1649 - 0.0000  24242.6926 - 0.0000
+TPM3u+F+R3      -11004.6721  22617.3442 - 0.0000  22771.7489 - 0.0000  24233.7768 - 0.0000
+TPM3+F+R3       -11004.6763  22617.3527 - 0.0000  22771.7573 - 0.0000  24233.7853 - 0.0000
+TPM3+F+R4       -11004.6591  22621.3183 - 0.0000  22778.0188 - 0.0000  24248.3853 - 0.0000
+TPM3u+F+R4      -11004.6601  22621.3201 - 0.0000  22778.0207 - 0.0000  24248.3871 - 0.0000
+K3Pu+F+R3       -11009.6888  22627.3776 - 0.0000  22781.7823 - 0.0000  24243.8102 - 0.0000
+TPM2u+F+R3      -11011.3904  22630.7807 - 0.0000  22785.1854 - 0.0000  24247.2133 - 0.0000
+TPM2+F+R3       -11011.4914  22630.9828 - 0.0000  22785.3874 - 0.0000  24247.4154 - 0.0000
+TIM3+F+G4       -11015.9626  22635.9253 - 0.0000  22788.0550 - 0.0000  24241.7234 - 0.0000
+K3Pu+F+R4       -11009.6931  22631.3861 - 0.0000  22788.0867 - 0.0000  24258.4531 - 0.0000
+TN+F+R3         -11013.1449  22634.2897 - 0.0000  22788.6944 - 0.0000  24250.7223 - 0.0000
+GTR+F+G4        -11013.7422  22635.4843 - 0.0000  22789.8890 - 0.0000  24251.9169 - 0.0000
+TPM2u+F+R4      -11011.3834  22634.7668 - 0.0000  22791.4674 - 0.0000  24261.8338 - 0.0000
+TPM2+F+R4       -11011.4844  22634.9689 - 0.0000  22791.6695 - 0.0000  24262.0359 - 0.0000
+TIM+F+G4        -11018.4530  22640.9060 - 0.0000  22793.0356 - 0.0000  24246.7041 - 0.0000
+TN+F+G4         -11020.1999  22642.3998 - 0.0000  22793.3998 - 0.0000  24242.8808 - 0.0000
+TN+F+R4         -11013.0669  22638.1338 - 0.0000  22794.8344 - 0.0000  24265.2008 - 0.0000
+TIM2+F+G4       -11019.9715  22643.9430 - 0.0000  22796.0727 - 0.0000  24249.7412 - 0.0000
+HKY+F+R5        -11014.5913  22643.1825 - 0.0000  22801.0390 - 0.0000  24275.5667 - 0.0000
+HKY+F+R6        -11013.2172  22644.4344 - 0.0000  22804.6183 - 0.0000  24287.4530 - 0.0000
+TPM3+F+G4       -11029.4015  22660.8029 - 0.0000  22811.8029 - 0.0000  24261.2839 - 0.0000
+TPM3u+F+G4      -11029.4134  22660.8267 - 0.0000  22811.8267 - 0.0000  24261.3077 - 0.0000
+TVM+F+G4        -11027.0864  22660.1727 - 0.0000  22813.4373 - 0.0000  24271.2881 - 0.0000
+K3Pu+F+G4       -11032.7074  22667.4148 - 0.0000  22818.4148 - 0.0000  24267.8957 - 0.0000
+HKY+F+G4        -11034.3508  22668.7016 - 0.0000  22818.5772 - 0.0000  24263.8654 - 0.0000
+TPM2+F+G4       -11034.3050  22670.6100 - 0.0000  22821.6100 - 0.0000  24271.0910 - 0.0000
+TPM2u+F+G4      -11034.3396  22670.6792 - 0.0000  22821.6792 - 0.0000  24271.1602 - 0.0000
+HKY+F+R4        -11033.4895  22676.9789 - 0.0000  22832.5289 - 0.0000  24298.7287 - 0.0000
+HKY+F+R3        -11036.9657  22679.9314 - 0.0000  22833.1960 - 0.0000  24291.0468 - 0.0000
+TIM3+F+R2       -11045.8803  22697.7606 - 0.0000  22851.0251 - 0.0000  24308.8759 - 0.0000
+GTR+F+R2        -11044.0893  22698.1786 - 0.0000  22853.7286 - 0.0000  24319.9284 - 0.0000
+TIM+F+R2        -11047.8029  22701.6058 - 0.0000  22854.8704 - 0.0000  24312.7212 - 0.0000
+TIM2+F+R2       -11049.0333  22704.0665 - 0.0000  22857.3311 - 0.0000  24315.1819 - 0.0000
+TPM3u+F+R2      -11053.2358  22710.4715 - 0.0000  22862.6012 - 0.0000  24316.2697 - 0.0000
+TPM3+F+R2       -11055.3537  22714.7075 - 0.0000  22866.8371 - 0.0000  24320.5056 - 0.0000
+TVM+F+R2        -11054.8377  22717.6753 - 0.0000  22872.0800 - 0.0000  24334.1079 - 0.0000
+TPM2u+F+R2      -11064.9430  22733.8861 - 0.0000  22886.0158 - 0.0000  24339.6842 - 0.0000
+TPM2+F+R2       -11069.1759  22742.3517 - 0.0000  22894.4814 - 0.0000  24348.1499 - 0.0000
+K3Pu+F+R2       -11073.0497  22750.0994 - 0.0000  22902.2291 - 0.0000  24355.8976 - 0.0000
+TN+F+R2         -11078.5102  22761.0204 - 0.0000  22913.1501 - 0.0000  24366.8186 - 0.0000
+HKY+F+R2        -11113.2648  22828.5296 - 0.0000  22979.5296 - 0.0000  24429.0105 - 0.0000
+TPM3+F+I        -11131.0900  22864.1800 - 0.0000  23015.1800 - 0.0000  24464.6610 - 0.0000
+TPM3u+F+I       -11131.1022  22864.2044 - 0.0000  23015.2044 - 0.0000  24464.6854 - 0.0000
+TIM3+F+I        -11130.9269  22865.8539 - 0.0000  23017.9835 - 0.0000  24471.6520 - 0.0000
+TVM+F+I         -11130.2831  22866.5662 - 0.0000  23019.8307 - 0.0000  24477.6815 - 0.0000
+GTR+F+I         -11130.2660  22868.5319 - 0.0000  23022.9366 - 0.0000  24484.9645 - 0.0000
+HKY+F+I         -11139.5213  22879.0427 - 0.0000  23028.9182 - 0.0000  24474.2064 - 0.0000
+K3Pu+F+I        -11139.3875  22880.7751 - 0.0000  23031.7751 - 0.0000  24481.2560 - 0.0000
+TN+F+I          -11139.6034  22881.2068 - 0.0000  23032.2068 - 0.0000  24481.6878 - 0.0000
+TPM2+F+I        -11139.6511  22881.3023 - 0.0000  23032.3023 - 0.0000  24481.7832 - 0.0000
+TPM2u+F+I       -11139.6861  22881.3722 - 0.0000  23032.3722 - 0.0000  24481.8532 - 0.0000
+TIM+F+I         -11139.3683  22882.7366 - 0.0000  23034.8663 - 0.0000  24488.5347 - 0.0000
+TIM2+F+I        -11139.4997  22882.9995 - 0.0000  23035.1291 - 0.0000  24488.7976 - 0.0000
+TVMe+R3         -11313.1273  23232.2547 - 0.0000  23385.5192 - 0.0000  24843.3700 - 0.0000
+TIM3e+R3        -11315.1369  23234.2737 - 0.0000  23386.4034 - 0.0000  24840.0719 - 0.0000
+SYM+R3          -11313.0957  23234.1914 - 0.0000  23388.5961 - 0.0000  24850.6240 - 0.0000
+TVMe+R4         -11313.0169  23236.0339 - 0.0000  23391.5839 - 0.0000  24857.7837 - 0.0000
+TIM3e+R4        -11315.0321  23238.0643 - 0.0000  23392.4689 - 0.0000  24854.4968 - 0.0000
+SYM+R4          -11313.0291  23238.0582 - 0.0000  23394.7588 - 0.0000  24865.1252 - 0.0000
+TVMe+I+G4       -11338.5240  23279.0479 - 0.0000  23430.0479 - 0.0000  24879.5289 - 0.0000
+TIM3e+I+G4      -11340.1194  23280.2388 - 0.0000  23430.1143 - 0.0000  24875.4025 - 0.0000
+SYM+I+G4        -11338.3187  23280.6374 - 0.0000  23432.7670 - 0.0000  24886.4355 - 0.0000
+K2P+R9          -11353.1685  23330.3370 - 0.0000  23494.0520 - 0.0000  24989.3073 - 0.0000
+K2P+R8          -11356.4642  23332.9284 - 0.0000  23494.2840 - 0.0000  24981.2642 - 0.0000
+TIM2e+R3        -11369.6289  23343.2578 - 0.0000  23495.3874 - 0.0000  24949.0559 - 0.0000
+TIMe+R3         -11369.8085  23343.6170 - 0.0000  23495.7466 - 0.0000  24949.4151 - 0.0000
+K3P+R3          -11373.4129  23348.8258 - 0.0000  23499.8258 - 0.0000  24949.3068 - 0.0000
+K2P+R10         -11352.9957  23333.9914 - 0.0000  23500.0871 - 0.0000  25003.5961 - 0.0000
+K2P+R7          -11362.6760  23341.3519 - 0.0000  23500.3695 - 0.0000  24979.0534 - 0.0000
+K2P+R6          -11365.9970  23343.9939 - 0.0000  23500.6945 - 0.0000  24971.0609 - 0.0000
+TIM2e+R4        -11369.5007  23347.0014 - 0.0000  23501.4060 - 0.0000  24963.4340 - 0.0000
+TIMe+R4         -11369.6965  23347.3929 - 0.0000  23501.7976 - 0.0000  24963.8255 - 0.0000
+K3P+R4          -11373.2975  23352.5950 - 0.0000  23505.8596 - 0.0000  24963.7104 - 0.0000
+K2P+R5          -11374.3606  23356.7212 - 0.0000  23511.1259 - 0.0000  24973.1538 - 0.0000
+K2P+I+G4        -11384.6807  23365.3614 - 0.0000  23513.0035 - 0.0000  24949.8907 - 0.0000
+TIM3e+G4        -11383.4690  23364.9381 - 0.0000  23513.6943 - 0.0000  24954.7846 - 0.0000
+K3P+I+G4        -11383.7443  23365.4887 - 0.0000  23514.2449 - 0.0000  24955.3352 - 0.0000
+TVMe+G4         -11382.5892  23365.1783 - 0.0000  23515.0538 - 0.0000  24960.3420 - 0.0000
+TNe+I+G4        -11384.7216  23367.4432 - 0.0000  23516.1994 - 0.0000  24957.2897 - 0.0000
+SYM+G4          -11381.8836  23365.7672 - 0.0000  23516.7672 - 0.0000  24966.2482 - 0.0000
+TNe+R3          -11382.0923  23366.1846 - 0.0000  23517.1846 - 0.0000  24966.6655 - 0.0000
+TIMe+I+G4       -11383.7076  23367.4152 - 0.0000  23517.2907 - 0.0000  24962.5789 - 0.0000
+TIM2e+I+G4      -11384.5961  23369.1921 - 0.0000  23519.0676 - 0.0000  24964.3558 - 0.0000
+TNe+R4          -11382.0301  23370.0602 - 0.0000  23523.3248 - 0.0000  24981.1756 - 0.0000
+K2P+R4          -11383.8644  23371.7289 - 0.0000  23523.8586 - 0.0000  24977.5270 - 0.0000
+K2P+R3          -11395.8059  23391.6119 - 0.0000  23541.4874 - 0.0000  24986.7756 - 0.0000
+TIM3e+R2        -11398.0387  23396.0775 - 0.0000  23545.9530 - 0.0000  24991.2412 - 0.0000
+TVMe+R2         -11396.9008  23395.8016 - 0.0000  23546.8016 - 0.0000  24996.2825 - 0.0000
+SYM+R2          -11396.7518  23397.5037 - 0.0000  23549.6333 - 0.0000  25003.3018 - 0.0000
+K2P+G4          -11428.1375  23450.2750 - 0.0000  23596.8081 - 0.0000  25029.4871 - 0.0000
+K3P+G4          -11427.4870  23450.9739 - 0.0000  23598.6160 - 0.0000  25035.5032 - 0.0000
+TNe+G4          -11427.7824  23451.5648 - 0.0000  23599.2068 - 0.0000  25036.0941 - 0.0000
+TIMe+G4         -11427.0033  23452.0066 - 0.0000  23600.7628 - 0.0000  25041.8531 - 0.0000
+TIM2e+G4        -11427.7100  23453.4200 - 0.0000  23602.1762 - 0.0000  25043.2665 - 0.0000
+TIMe+R2         -11439.9739  23479.9479 - 0.0000  23629.8234 - 0.0000  25075.1116 - 0.0000
+TIM2e+R2        -11440.5166  23481.0332 - 0.0000  23630.9087 - 0.0000  25076.1969 - 0.0000
+K3P+R2          -11443.2609  23484.5218 - 0.0000  23633.2781 - 0.0000  25074.3684 - 0.0000
+TNe+R2          -11450.5884  23499.1767 - 0.0000  23647.9330 - 0.0000  25089.0233 - 0.0000
+K2P+R2          -11470.3387  23536.6774 - 0.0000  23684.3194 - 0.0000  25121.2067 - 0.0000
+TIM3e+I         -11493.5539  23585.1078 - 0.0000  23733.8641 - 0.0000  25174.9544 - 0.0000
+SYM+I           -11492.8154  23587.6307 - 0.0000  23738.6307 - 0.0000  25188.1117 - 0.0000
+TVMe+I          -11505.4948  23610.9896 - 0.0000  23760.8651 - 0.0000  25206.1533 - 0.0000
+TNe+I           -11525.7069  23647.4137 - 0.0000  23795.0558 - 0.0000  25231.9430 - 0.0000
+TIMe+I          -11525.5866  23649.1733 - 0.0000  23797.9295 - 0.0000  25239.0198 - 0.0000
+TIM2e+I         -11525.7493  23649.4986 - 0.0000  23798.2548 - 0.0000  25239.3451 - 0.0000
+K2P+I           -11537.1829  23668.3658 - 0.0000  23814.8989 - 0.0000  25247.5779 - 0.0000
+K3P+I           -11537.1909  23670.3818 - 0.0000  23818.0239 - 0.0000  25254.9111 - 0.0000
+F81+F+I+G4      -12013.1829  24626.3657 - 0.0000  24776.2412 - 0.0000  26221.5294 - 0.0000
+F81+F+R6        -12005.1383  24626.2766 - 0.0000  24785.2941 - 0.0000  26263.9780 - 0.0000
+F81+F+R7        -12002.1160  24624.2320 - 0.0000  24785.5877 - 0.0000  26272.5679 - 0.0000
+F81+F+R5        -12011.7838  24635.5676 - 0.0000  24792.2681 - 0.0000  26262.6346 - 0.0000
+F81+F+R4        -12019.5177  24647.0355 - 0.0000  24801.4401 - 0.0000  26263.4681 - 0.0000
+F81+F+G4        -12053.4583  24704.9166 - 0.0000  24853.6728 - 0.0000  26294.7631 - 0.0000
+F81+F+R3        -12078.2581  24760.5162 - 0.0000  24912.6459 - 0.0000  26366.3143 - 0.0000
+F81+F+I         -12113.5658  24825.1316 - 0.0000  24973.8878 - 0.0000  26414.9781 - 0.0000
+F81+F+R2        -12120.0710  24840.1421 - 0.0000  24990.0176 - 0.0000  26435.3058 - 0.0000
+JC+R8           -12124.4072  24866.8143 - 0.0000  25026.9983 - 0.0000  26509.8330 - 0.0000
+JC+R7           -12127.9876  24869.9752 - 0.0000  25027.8316 - 0.0000  26502.3594 - 0.0000
+JC+R6           -12131.3673  24872.7345 - 0.0000  25028.2845 - 0.0000  26494.4843 - 0.0000
+JC+R9           -12122.0757  24866.1514 - 0.0000  25028.6841 - 0.0000  26519.8045 - 0.0000
+JC+R5           -12137.7799  24881.5597 - 0.0000  25034.8243 - 0.0000  26492.6751 - 0.0000
+JC+R4           -12145.0745  24892.1489 - 0.0000  25043.1489 - 0.0000  26492.6298 - 0.0000
+JC+I+G4         -12156.1890  24906.3779 - 0.0000  25052.9111 - 0.0000  26485.5900 - 0.0000
+JC+G4           -12185.3947  24962.7894 - 0.0000  25108.2187 - 0.0000  26536.6843 - 0.0000
+JC+R3           -12207.3003  25012.6005 - 0.0000  25161.3567 - 0.0000  26602.4470 - 0.0000
+JC+R2           -12257.1405  25108.2809 - 0.0000  25254.8140 - 0.0000  26687.4930 - 0.0000
+JC+I            -12272.7318  25137.4635 - 0.0000  25282.8928 - 0.0000  26711.3584 - 0.0000
+TPM3+F          -12436.2347  25472.4695 - 0.0000  25622.3450 - 0.0000  27067.6332 - 0.0000
+TPM3u+F         -12436.2475  25472.4950 - 0.0000  25622.3706 - 0.0000  27067.6588 - 0.0000
+TIM3+F          -12436.1073  25474.2145 - 0.0000  25625.2145 - 0.0000  27074.6955 - 0.0000
+TVM+F           -12435.5269  25475.0537 - 0.0000  25627.1834 - 0.0000  27080.8518 - 0.0000
+GTR+F           -12435.5375  25477.0751 - 0.0000  25630.3396 - 0.0000  27088.1904 - 0.0000
+HKY+F           -12468.0188  25534.0376 - 0.0000  25682.7938 - 0.0000  27123.8841 - 0.0000
+K3Pu+F          -12467.6652  25535.3303 - 0.0000  25685.2058 - 0.0000  27130.4940 - 0.0000
+TN+F            -12468.1226  25536.2453 - 0.0000  25686.1208 - 0.0000  27131.4090 - 0.0000
+TPM2+F          -12468.1337  25536.2674 - 0.0000  25686.1429 - 0.0000  27131.4311 - 0.0000
+TPM2u+F         -12468.1697  25536.3395 - 0.0000  25686.2150 - 0.0000  27131.5032 - 0.0000
+TIM+F           -12467.6604  25537.3208 - 0.0000  25688.3208 - 0.0000  27137.8017 - 0.0000
+TIM2+F          -12467.9898  25537.9796 - 0.0000  25688.9796 - 0.0000  27138.4605 - 0.0000
+TIM3e           -12560.0195  25716.0390 - 0.0000  25863.6811 - 0.0000  27300.5683 - 0.0000
+TVMe            -12559.7082  25717.4164 - 0.0000  25866.1726 - 0.0000  27307.2629 - 0.0000
+SYM             -12559.5398  25719.0797 - 0.0000  25868.9552 - 0.0000  27314.2434 - 0.0000
+K2P             -12637.4662  25866.9323 - 0.0000  26012.3616 - 0.0000  27440.8272 - 0.0000
+TNe             -12637.3469  25868.6938 - 0.0000  26015.2269 - 0.0000  27447.9058 - 0.0000
+K3P             -12637.3815  25868.7630 - 0.0000  26015.2961 - 0.0000  27447.9751 - 0.0000
+TIMe            -12637.1396  25870.2791 - 0.0000  26017.9212 - 0.0000  27454.8084 - 0.0000
+TIM2e           -12637.3927  25870.7855 - 0.0000  26018.4276 - 0.0000  27455.3148 - 0.0000
+F81+F           -13268.7346  27133.4692 - 0.0000  27281.1113 - 0.0000  28717.9985 - 0.0000
+JC              -13323.5253  27237.0506 - 0.0000  27381.3812 - 0.0000  28805.6283 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM3+F+I+G4
+
+Rate parameter R:
+
+  A-C: 0.4765
+  A-G: 11.5976
+  A-T: 1.0000
+  C-G: 0.4765
+  C-T: 16.0777
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2032
+  pi(C) = 0.1493
+  pi(G) = 0.2098
+  pi(T) = 0.4376
+
+Rate matrix Q:
+
+  A   -0.8379   0.02027     0.693    0.1247
+  C   0.02758     -2.06   0.02847     2.004
+  G    0.6714   0.02027   -0.8163    0.1247
+  T   0.05789    0.6839   0.05975   -0.8016
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.5865
+Gamma shape alpha: 0.9526
+
+ Category  Relative_rate  Proportion
+  0         0              0.5865
+  1         0.3081         0.1034
+  2         1.117          0.1034
+  3         2.398          0.1034
+  4         5.85           0.1034
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -10883.5445 (s.e. 366.7043)
+Unconstrained log-likelihood (without tree): -6521.6484
+Number of free parameters (#branches + #model parameters): 303
+Akaike information criterion (AIC) score: 22373.0890
+Corrected Akaike information criterion (AICc) score: 22526.3536
+Bayesian information criterion (BIC) score: 23984.2044
+
+Total tree length (sum of branch lengths): 3.3136
+Sum of internal branch lengths: 1.7570 (53.0224% of tree length)
+
+WARNING: 63 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AM73_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE139A' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--AM73_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE139A
+|
+|                                                  +--AM80_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE147
+|                                               +**| (38)
+|                                               |  |  +--AM90_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW153C
+|                                               |  +--| (92)
+|                                               |     +--Amerodectes_ischyros_ex_Vermivora_cyanoptera_BWWA412R
+|                                            +**| (26)
+|                                            |  |  +--AM84_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151A
+|                                            |  +--| (88)
+|                                            |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW747R
+|                                         +**| (27)
+|                                         |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW575R
+|                                      +--| (67)
+|                                      |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW577R
+|                                   +**| (16)
+|                                   |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW702R
+|                                +--| (57)
+|                                |  |           +--AM192_Amerodectes_ischyros_haplotype_2_ex_Setophaga_cerulea_CERW074A
+|                                |  |        +**| (74)
+|                                |  |        |  +--Amerodectes_ischyros_ex_Setophaga_fusca_BLBW861R
+|                                |  |     +--| (54)
+|                                |  |     |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW744R
+|                                |  |  +--| (70)
+|                                |  |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW070
+|                                |  |  |  +**| (97)
+|                                |  |  |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW723R
+|                                |  +**| (9)
+|                                |     +--Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA939R
+|                             +**| (28)
+|                             |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW739R
+|                          +**| (10)
+|                          |  +--Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE967R
+|                       +**| (1)
+|                       |  |     +--Amerodectes_ischyros_ex_Setophaga_tigrina_CMWA952R
+|                       |  |  +--| (71)
+|                       |  |  |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW717R
+|                       |  +**| (1)
+|                       |     +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW358A
+|                    +**| (2)
+|                    |  |                       +--Amerodectes_ischyros_ex_Setophaga_virens_BTNW492R
+|                    |  |                    +**| (14)
+|                    |  |                    |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW068
+|                    |  |                 +--| (42)
+|                    |  |                 |  |  +--Amerodectes_ischyros_ex_Setophaga_magnolia_MAWA362A
+|                    |  |                 |  +**| (12)
+|                    |  |                 |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW069
+|                    |  |              +**| (19)
+|                    |  |              |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW718R
+|                    |  |              |  +--| (82)
+|                    |  |              |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW751R
+|                    |  |           +**| (6)
+|                    |  |           |  |     +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW687R
+|                    |  |           |  |  +**| (4)
+|                    |  |           |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW721R
+|                    |  |           |  +**| (5)
+|                    |  |           |     +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW736R
+|                    |  |        +--| (38)
+|                    |  |        |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW735R
+|                    |  |        |  +**| (23)
+|                    |  |        |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW748R
+|                    |  |     +**| (13)
+|                    |  |     |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW750R
+|                    |  |  +**| (3)
+|                    |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW746R
+|                    |  +**| (2)
+|                    |     |     +--Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA928R
+|                    |     |  +**| (3)
+|                    |     |  |  |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW691R
+|                    |     |  |  +--| (99)
+|                    |     |  |     +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW733R
+|                    |     +**| (2)
+|                    |        |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW371B
+|                    |        +**| (26)
+|                    |           +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW719R
+|                 +**| (14)
+|                 |  +**Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW850R
+|              +**| (47)
+|              |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW067A
+|           +--| (60)
+|           |  +--Amerodectes_ischyros_ex_Cardellina_canadensis_CAWA366A
+|        +--| (69)
+|        |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW578R
+|     +**| (53)
+|     |  |     +--AM88_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151C
+|     |  |  +**| (61)
+|     |  |  |  +--AM89_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW152B
+|     |  +--| (80)
+|     |     |  +**AM101_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW075C
+|     |     +--| (62)
+|     |        |                                       +--AM168_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100A
+|     |        |                                    +--| (93)
+|     |        |                                    |  +--AM169_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100C
+|     |        |                                 +--| (31)
+|     |        |                                 |  |     +--AM147_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375C
+|     |        |                                 |  |  +**| (37)
+|     |        |                                 |  |  |  +--AM148_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376A
+|     |        |                                 |  +--| (36)
+|     |        |                                 |     |  +--Tyrannidectes_charitomenos_ex_Setophaga_americana_NOPA676R
+|     |        |                                 |     +--| (89)
+|     |        |                                 |        +--Tyrannidectes_charitomenos_ex_Setophaga_virens_BTNW765P
+|     |        |                              +**| (30)
+|     |        |                              |  |  +--AM149_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376B
+|     |        |                              |  +--| (47)
+|     |        |                              |     |  +**Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA970R
+|     |        |                              |     +--| (49)
+|     |        |                              |        +--Tyrannidectes_aff_charitomenos_ex_Setophaga_discolor_PRAW770P
+|     |        |                           +--| (33)
+|     |        |                           |  |  +--AM171_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329A
+|     |        |                           |  +--| (100)
+|     |        |                           |     +**AM172_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329C
+|     |        |                        +--| (34)
+|     |        |                        |  +--AM146_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375A
+|     |        |           +------------| (100)
+|     |        |           |            +**AM170_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA262A
+|     |        |       +---| (100)
+|     |        |       |   |                    +--AM72_Proctophyllodes_quadratus_ex_Setophaga_ruticilla_AMRE138A
+|     |        |       |   |                 +--| (50)
+|     |        |       |   |                 |  |        +--AM85_Proctophyllodes_quadratus_ex_Setophaga_caerulescens_BTBW152A
+|     |        |       |   |                 |  |     +--| (69)
+|     |        |       |   |                 |  |     |  +--AM160_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA167C
+|     |        |       |   |                 |  |  +**| (50)
+|     |        |       |   |                 |  |  |  |  +--AM64_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA301B
+|     |        |       |   |                 |  |  |  +--| (87)
+|     |        |       |   |                 |  |  |     |  +--AM158_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA284A
+|     |        |       |   |                 |  |  |     +--| (100)
+|     |        |       |   |                 |  |  |        +--AM159_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA294A
+|     |        |       |   |                 |  +--| (36)
+|     |        |       |   |                 |     |     +--AM116_Proctophyllodes_quadratus_ex_Setophaga_pensylvanica_CSWA386A
+|     |        |       |   |                 |     |  +--| (99)
+|     |        |       |   |                 |     |  |  +--Proctophyllodes_quadratus_ex_Setophaga_petechia_YEWA941P_Pr
+|     |        |       |   |                 |     +--| (79)
+|     |        |       |   |                 |        +--AM157_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA283A
+|     |        |       |   |           +-----| (96)
+|     |        |       |   |           |     +--AM132_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA316A
+|     |        |       |   |     +-----| (98)
+|     |        |       |   |     |     |    +--AM174_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA383A
+|     |        |       |   |     |     +----| (99)
+|     |        |       |   |     |          |  +--AM176_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA389A
+|     |        |       |   |     |          +--| (88)
+|     |        |       |   |     |             +--AM177_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA390A
+|     |        |       |   +-----| (100)
+|     |        |       |         +---------------------------------------Trouessartia_sp_ex_Setophaga_petechia_YEWA941P_Tr
+|     |        |  +----| (100)
+|     |        |  |    |                                                     +--AM70_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW090B
+|     |        |  |    |                                                  +--| (49)
+|     |        |  |    |                                                  |  |  +--AM55_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313A
+|     |        |  |    |                                                  |  +**| (38)
+|     |        |  |    |                                                  |     +--AM153_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW330
+|     |        |  |    |                                               +**| (36)
+|     |        |  |    |                                               |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R1_pw
+|     |        |  |    |                                            +--| (57)
+|     |        |  |    |                                            |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW808R
+|     |        |  |    |                                         +**| (10)
+|     |        |  |    |                                         |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW671R
+|     |        |  |    |                                         |  +--| (69)
+|     |        |  |    |                                         |     |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW831R
+|     |        |  |    |                                         |     +**| (78)
+|     |        |  |    |                                         |        +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R20_pw
+|     |        |  |    |                                      +**| (4)
+|     |        |  |    |                                      |  |        +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW807R
+|     |        |  |    |                                      |  |     +--| (91)
+|     |        |  |    |                                      |  |     |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW813R
+|     |        |  |    |                                      |  |  +**| (13)
+|     |        |  |    |                                      |  |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R5_pw
+|     |        |  |    |                                      |  +**| (6)
+|     |        |  |    |                                      |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R20_pw
+|     |        |  |    |                                   +**| (5)
+|     |        |  |    |                                   |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW753R
+|     |        |  |    |                                +**| (23)
+|     |        |  |    |                                |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW825R
+|     |        |  |    |                             +--| (54)
+|     |        |  |    |                             |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW810R
+|     |        |  |    |                          +**| (38)
+|     |        |  |    |                          |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R1_pw
+|     |        |  |    |                          |  +--| (98)
+|     |        |  |    |                          |     +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R5_pw
+|     |        |  |    |                       +--| (53)
+|     |        |  |    |                       |  |              +--AM154_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW267
+|     |        |  |    |                       |  |           +--| (86)
+|     |        |  |    |                       |  |           |  +--AM56_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313C
+|     |        |  |    |                       |  |        +**| (63)
+|     |        |  |    |                       |  |        |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW685R
+|     |        |  |    |                       |  |     +--| (73)
+|     |        |  |    |                       |  |     |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R20_pw
+|     |        |  |    |                       |  |  +**| (4)
+|     |        |  |    |                       |  |  |  |        +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW690R
+|     |        |  |    |                       |  |  |  |     +--| (15)
+|     |        |  |    |                       |  |  |  |     |  |           +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW754R
+|     |        |  |    |                       |  |  |  |     |  |        +**| (80)
+|     |        |  |    |                       |  |  |  |     |  |        |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW805R
+|     |        |  |    |                       |  |  |  |     |  |     +**| (40)
+|     |        |  |    |                       |  |  |  |     |  |     |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW809R
+|     |        |  |    |                       |  |  |  |     |  |     |  +**| (25)
+|     |        |  |    |                       |  |  |  |     |  |     |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R1_pw
+|     |        |  |    |                       |  |  |  |     |  |  +--| (84)
+|     |        |  |    |                       |  |  |  |     |  |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R5_pw
+|     |        |  |    |                       |  |  |  |     |  +--| (85)
+|     |        |  |    |                       |  |  |  |     |     +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW756R
+|     |        |  |    |                       |  |  |  |  +**| (4)
+|     |        |  |    |                       |  |  |  |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R20_pw
+|     |        |  |    |                       |  |  |  +--| (14)
+|     |        |  |    |                       |  |  |     |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW752R
+|     |        |  |    |                       |  |  |     +--| (94)
+|     |        |  |    |                       |  |  |        +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW976R
+|     |        |  |    |                       |  +--| (31)
+|     |        |  |    |                       |     |     +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW709R
+|     |        |  |    |                       |     |  +--| (89)
+|     |        |  |    |                       |     |  |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW978R
+|     |        |  |    |                       |     +--| (17)
+|     |        |  |    |                       |        +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW829R
+|     |        |  |    |                    +**| (38)
+|     |        |  |    |                    |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW759R
+|     |        |  |    |                    |  +--| (98)
+|     |        |  |    |                    |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R1_pw
+|     |        |  |    |                 +**| (29)
+|     |        |  |    |                 |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW758R
+|     |        |  |    |              +--| (70)
+|     |        |  |    |              |  |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW672R
+|     |        |  |    |              |  +--| (72)
+|     |        |  |    |              |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW828R
+|     |        |  |    |           +--| (94)
+|     |        |  |    |           |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW684R
+|     |        |  |    |        +--| (100)
+|     |        |  |    |        |  +--AM155_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW310
+|     |        |  |    |     +--| (91)
+|     |        |  |    |     |  |         +--AM107_Amerodectes_hribari_ex_Geothlypis_trichas_COYE096B
+|     |        |  |    |     |  |      +--| (98)
+|     |        |  |    |     |  |      |  +--Amerodectes_hribari_ex_Geothlypis_trichas_COYE868R
+|     |        |  |    |     |  |   +--| (99)
+|     |        |  |    |     |  |   |  +--AM110_Amerodectes_hribari_ex_Geothlypis_trichas_COYE164C
+|     |        |  |    |     |  +---| (100)
+|     |        |  |    |     |      |     +**Amerodectes_hribari_ex_Oporornis_agilis_CONW930R
+|     |        |  |    |     |      |  +--| (100)
+|     |        |  |    |     |      |  |  +--Amerodectes_hribari_ex_Setophaga_pinus_PIWA948R
+|     |        |  |    |     |      +**| (78)
+|     |        |  |    |     |         +--Amerodectes_hribari_ex_Geothlypis_philadelphia_MOWA611R
+|     |        |  |    |  +--| (94)
+|     |        |  |    |  |  |     +--AM131_Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA305A
+|     |        |  |    |  |  |  +--| (100)
+|     |        |  |    |  |  |  |  |  +--Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA315A
+|     |        |  |    |  |  |  |  +--| (99)
+|     |        |  |    |  |  |  |     +--Amerodectes_jonesborensis_ex_Parkesia_motacilla_LOWA438A
+|     |        |  |    |  |  +--| (98)
+|     |        |  |    |  |     |                       +**AM122_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094A
+|     |        |  |    |  |     |                    +--| (100)
+|     |        |  |    |  |     |                    |  +**AM126_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094B
+|     |        |  |    |  |     |                 +**| (15)
+|     |        |  |    |  |     |                 |  +--AM129_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA350B
+|     |        |  |    |  |     |              +**| (12)
+|     |        |  |    |  |     |              |  |  +--AM136_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN165A
+|     |        |  |    |  |     |              |  +**| (55)
+|     |        |  |    |  |     |              |     |  +--AM210_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN031P10
+|     |        |  |    |  |     |              |     +--| (82)
+|     |        |  |    |  |     |              |        +--AM142_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN251A
+|     |        |  |    |  |     |           +**| (42)
+|     |        |  |    |  |     |           |  |     +--AM196_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA064A
+|     |        |  |    |  |     |           |  |  +--| (87)
+|     |        |  |    |  |     |           |  |  |  +**AM200_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN191A
+|     |        |  |    |  |     |           |  +**| (26)
+|     |        |  |    |  |     |           |     +--AM143_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN318C
+|     |        |  |    |  |     |        +**| (49)
+|     |        |  |    |  |     |        |  |  +--AM140_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN179
+|     |        |  |    |  |     |        |  +--| (89)
+|     |        |  |    |  |     |        |     |  +**Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN614P
+|     |        |  |    |  |     |        |     +**| (62)
+|     |        |  |    |  |     |        |        |  +--Amerodectes_seiurus_ex_Leiothlypis_ruficapilla_NAWA328A
+|     |        |  |    |  |     |        |        +**| (50)
+|     |        |  |    |  |     |        |           +--Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA584R
+|     |        |  |    |  |     |     +--| (56)
+|     |        |  |    |  |     |     |  +--AM123_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349A
+|     |        |  |    |  |     |  +**| (58)
+|     |        |  |    |  |     |  |  |  +--AM128_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349B
+|     |        |  |    |  |     |  |  +--| (97)
+|     |        |  |    |  |     |  |     +--AM139_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN194A
+|     |        |  |    |  |     +--| (100)
+|     |        |  |    |  |        +--AM124_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA351A
+|     |        |  |    +--| (99)
+|     |        |  |       |     +--Amerodectes_helmitheros_ex_Limnothlypis_swainsonii_SWWA980R
+|     |        |  |       |  +--| (100)
+|     |        |  |       |  |  +**Amerodectes_helmitheros_ex_Helmitheros_vermivorum_WEWA727R
+|     |        |  |       +--| (100)
+|     |        |  |          +--Amerodectes_sp_n_1_ex_Mniotilta_varia_BAWW968P
+|     |        +--| (99)
+|     |           +----Amerodectes_aff_ischyros_ex_Setophaga_castanea_BBWA971A
+|  +**| (25)
+|  |  |     +--AM91_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW154B
+|  |  |  +--| (70)
+|  |  |  |  |  +--AM190_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW065A
+|  |  |  |  +**| (71)
+|  |  |  |     +--AM175_Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA388A
+|  |  +**| (24)
+|  |     +--AM118_Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA367B
++--| (93)
+|  +--AM151_Amerodectes_ischyros_ex_Setophaga_discolor_PRAW380A
+|
++--AM100_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW072C
+
+Tree in newick format:
+
+(AM73_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE139A:0.0028244931,(((((((((((((((((AM80_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE147:0.0081231991,(AM90_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW153C:0.0090426651,Amerodectes_ischyros_ex_Vermivora_cyanoptera_BWWA412R:0.0047218973)92:0.0022787134)38:0.0000029748,(AM84_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151A:0.0043838549,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW747R:0.0018222881)88:0.0009346148)26:0.0000028222,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW575R:0.0000022864)27:0.0000023441,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW577R:0.0055492040)67:0.0013684358,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW702R:0.0013651538)16:0.0000027095,((((AM192_Amerodectes_ischyros_haplotype_2_ex_Setophaga_cerulea_CERW074A:0.0119332820,Amerodectes_ischyros_ex_Setophaga_fusca_BLBW861R:0.0013699496)74:0.0000027074,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW744R:0.0020455373)54:0.0006865444,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW070:0.0063862825,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW723R:0.0014581461)97:0.0006100440)70:0.0006737064,Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA939R:0.0006833891)9:0.0000021427)57:0.0006816394,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW739R:0.0006833181)28:0.0000024105,Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE967R:0.0006826532)10:0.0000021627,((Amerodectes_ischyros_ex_Setophaga_tigrina_CMWA952R:0.0013706784,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW717R:0.0000023319)71:0.0006822591,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW358A:0.0000022864)1:0.0000021584)1:0.0000021576,((((((((Amerodectes_ischyros_ex_Setophaga_virens_BTNW492R:0.0040970322,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW068:0.0048620252)14:0.0000021719,(Amerodectes_ischyros_ex_Setophaga_magnolia_MAWA362A:0.0034411469,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW069:0.0034281233)12:0.0000029050)42:0.0006766689,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW718R:0.0006830048,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW751R:0.0006917173)82:0.0006806831)19:0.0000023221,((Amerodectes_ischyros_ex_Setophaga_cerulea_CERW687R:0.0000022864,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW721R:0.0006797632)4:0.0000022069,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW736R:0.0000022864)5:0.0000021520)6:0.0000024353,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW735R:0.0006800329,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW748R:0.0055505557)23:0.0000021545)38:0.0006799672,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW750R:0.0006807805)13:0.0000025284,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW746R:0.0006816387)3:0.0000021365,((Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA928R:0.0006825469,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW691R:0.0000022864,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW733R:0.0000022864)99:0.0006833305)3:0.0000022583,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW371B:0.0013679945,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW719R:0.0055858491)26:0.0000022863)2:0.0000027438)2:0.0000021815)2:0.0000021799,Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW850R:0.0000022864)14:0.0000021325,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW067A:0.0006815929)47:0.0000023887,Amerodectes_ischyros_ex_Cardellina_canadensis_CAWA366A:0.0048718018)60:0.0013636503,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW578R:0.0000022261)69:0.0008428812,((AM88_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151C:0.0017514842,AM89_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW152B:0.0035124733)61:0.0000023139,(AM101_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW075C:0.0000026346,(((((((((AM168_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100A:0.0035783773,AM169_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100C:0.0036076864)93:0.0026997453,((AM147_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375C:0.0099944125,AM148_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376A:0.0044217930)37:0.0000027629,(Tyrannidectes_charitomenos_ex_Setophaga_americana_NOPA676R:0.0027751868,Tyrannidectes_charitomenos_ex_Setophaga_virens_BTNW765P:0.0020807619)89:0.0008391759)36:0.0008294250)31:0.0008027104,(AM149_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376B:0.0026460571,(Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA970R:0.0000023691,Tyrannidectes_aff_charitomenos_ex_Setophaga_discolor_PRAW770P:0.0585242855)49:0.0008114102)47:0.0015830955)30:0.0000023181,(AM171_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329A:0.0017222274,AM172_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329C:0.0000020063)100:0.0043762269)33:0.0008417703,AM146_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375A:0.0008884948)34:0.0078838660,AM170_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA262A:0.0000028625)100:0.2853328270,((((AM72_Proctophyllodes_quadratus_ex_Setophaga_ruticilla_AMRE138A:0.0095050594,(((AM85_Proctophyllodes_quadratus_ex_Setophaga_caerulescens_BTBW152A:0.0080076600,AM160_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA167C:0.0168513649)69:0.0039180934,(AM64_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA301B:0.0088751457,(AM158_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA284A:0.0092244502,AM159_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA294A:0.0086968715)100:0.0040660266)87:0.0029825738)50:0.0000022921,((AM116_Proctophyllodes_quadratus_ex_Setophaga_pensylvanica_CSWA386A:0.0125660565,Proctophyllodes_quadratus_ex_Setophaga_petechia_YEWA941P_Pr:0.0073899179)99:0.0011959933,AM157_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA283A:0.0093451110)79:0.0027038797)36:0.0012991927)50:0.0031837836,AM132_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA316A:0.0055328051)96:0.1452040179,(AM174_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA383A:0.0033279445,(AM176_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA389A:0.0042100844,AM177_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA390A:0.0038775240)88:0.0064497508)99:0.1157781064)98:0.1488745596,Trouessartia_sp_ex_Setophaga_petechia_YEWA941P_Tr:0.8727033979)100:0.1380132693)100:0.0905934426,((((((((((((((((((AM70_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW090B:0.0029193386,(AM55_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313A:0.0019291096,AM153_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW330:0.0036603556)38:0.0000022559)49:0.0012033291,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R1_pw:0.0007535700)36:0.0000029661,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW808R:0.0000025616)57:0.0007537750,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW671R:0.0007613508,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW831R:0.0000025402,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R20_pw:0.0000023249)78:0.0000020054)69:0.0007580101)10:0.0000025704,(((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW807R:0.0038424492,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW813R:0.0000021772)91:0.0007576299,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R5_pw:0.0086823825)13:0.0000022509,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R20_pw:0.0007573447)6:0.0000025380)4:0.0000020844,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW753R:0.0000022864)5:0.0000023621,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW825R:0.0000023358)23:0.0000025306,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW810R:0.0030403046)54:0.0007537548,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R1_pw:0.0053859062,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R5_pw:0.0000022906)98:0.0007517468)38:0.0000025818,(((((AM154_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW267:0.0036333450,AM56_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313C:0.0019159745)86:0.0012071865,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW685R:0.0030303429)63:0.0000022715,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R20_pw:0.0000025500)73:0.0007474653,(((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW690R:0.0000026900,((((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW754R:0.0000022864,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW805R:0.0000022864)80:0.0000025128,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW809R:0.0030265041,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R1_pw:0.0022797280)25:0.0000024759)40:0.0000022863,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R5_pw:0.0030455053)84:0.0007486788,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW756R:0.0000020504)85:0.0014992797)15:0.0007455358,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R20_pw:0.0053345722)4:0.0000029558,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW752R:0.0015148727,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW976R:0.0000020509)94:0.0007476412)14:0.0007472942)4:0.0000024796,((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW709R:0.0000022864,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW978R:0.0000022864)89:0.0007530073,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW829R:0.0000024801)17:0.0007509806)31:0.0007503387)53:0.0007536367,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW759R:0.0035162713,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R1_pw:0.0038731588)98:0.0026427663)38:0.0000023515,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW758R:0.0000022864)29:0.0000020314,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW672R:0.0000022154,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW828R:0.0007622054)72:0.0007579223)70:0.0015146854,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW684R:0.0000024974)94:0.0046863890,AM155_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW310:0.0092366305)100:0.0723627791,(((AM107_Amerodectes_hribari_ex_Geothlypis_trichas_COYE096B:0.0043605544,Amerodectes_hribari_ex_Geothlypis_trichas_COYE868R:0.0072931884)98:0.0007449703,AM110_Amerodectes_hribari_ex_Geothlypis_trichas_COYE164C:0.0036833229)99:0.0100206798,((Amerodectes_hribari_ex_Oporornis_agilis_CONW930R:0.0000022864,Amerodectes_hribari_ex_Setophaga_pinus_PIWA948R:0.0014789988)100:0.0015474002,Amerodectes_hribari_ex_Geothlypis_philadelphia_MOWA611R:0.0044799453)78:0.0000020841)100:0.0961866089)91:0.0124437711,((AM131_Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA305A:0.0019305745,(Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA315A:0.0055882394,Amerodectes_jonesborensis_ex_Parkesia_motacilla_LOWA438A:0.0047346424)99:0.0074134307)100:0.0623521660,((((((((AM122_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094A:0.0000020144,AM126_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094B:0.0000027031)100:0.0068943545,AM129_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA350B:0.0009525404)15:0.0000024577,(AM136_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN165A:0.0048139462,(AM210_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN031P10:0.0048625083,AM142_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN251A:0.0049368597)82:0.0008991247)55:0.0000029797)12:0.0000029111,((AM196_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA064A:0.0048406163,AM200_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN191A:0.0000022646)87:0.0009492323,AM143_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN318C:0.0028805021)26:0.0000025718)42:0.0000025232,(AM140_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN179:0.0057321376,(Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN614P:0.0000022864,(Amerodectes_seiurus_ex_Leiothlypis_ruficapilla_NAWA328A:0.0015317696,Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA584R:0.0007632313)50:0.0000025954)62:0.0000028002)89:0.0009202873)49:0.0000027552,AM123_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349A:0.0038411571)56:0.0009265761,(AM128_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349B:0.0009519160,AM139_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN194A:0.0019248764)97:0.0009535999)58:0.0001915509,AM124_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA351A:0.0017167712)100:0.0637420156)98:0.0258209059)94:0.0137426092,((Amerodectes_helmitheros_ex_Limnothlypis_swainsonii_SWWA980R:0.0063109116,Amerodectes_helmitheros_ex_Helmitheros_vermivorum_WEWA727R:0.0000021220)100:0.0675292149,Amerodectes_sp_n_1_ex_Mniotilta_varia_BAWW968P:0.0690469155)100:0.0531145135)99:0.0612028257)100:0.1155365331,Amerodectes_aff_ischyros_ex_Setophaga_castanea_BBWA971A:0.1092336810)99:0.0754210720)62:0.0025586166)80:0.0025516425)53:0.0000027196,((AM91_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW154B:0.0053644243,(AM190_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW065A:0.0096148685,AM175_Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA388A:0.0058360607)71:0.0004410023)70:0.0008628873,AM118_Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA367B:0.0043782956)24:0.0000020835)25:0.0000025978,AM151_Amerodectes_ischyros_ex_Setophaga_discolor_PRAW380A:0.0061707908)93:0.0006827601,AM100_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW072C:0.0073547443);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -10891.313835
+Robinson-Foulds distance between ML tree and consensus tree: 88
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AM73_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE139A
+|
+|                                +--AM80_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE147
+|                             +--| (22)
+|                             |  |        +--AM90_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW153C
+|                             |  |     +--| (92)
+|                             |  |     |  +--Amerodectes_ischyros_ex_Vermivora_cyanoptera_BWWA412R
+|                             |  |  +--| (41)
+|                             |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW577R
+|                             |  +--| (40)
+|                             |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW575R
+|                          +--| (67)
+|                          |  |  +--AM84_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151A
+|                          |  +--| (88)
+|                          |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW747R
+|                       +--| (57)
+|                       |  |           +--AM192_Amerodectes_ischyros_haplotype_2_ex_Setophaga_cerulea_CERW074A
+|                       |  |        +--| (74)
+|                       |  |        |  +--Amerodectes_ischyros_ex_Setophaga_fusca_BLBW861R
+|                       |  |     +--| (54)
+|                       |  |     |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW744R
+|                       |  |  +--| (70)
+|                       |  |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW070
+|                       |  |  |  +--| (97)
+|                       |  |  |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW723R
+|                       |  +--| (28)
+|                       |     |  +--Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA939R
+|                       |     +--| (24)
+|                       |        +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW702R
+|                    +--| (28)
+|                    |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW739R
+|                 +--| (5)
+|                 |  |  +--Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE967R
+|                 |  +--| (20)
+|                 |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW067A
+|              +--| (47)
+|              |  |                 +--Amerodectes_ischyros_ex_Setophaga_tigrina_CMWA952R
+|              |  |              +--| (71)
+|              |  |              |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW717R
+|              |  |           +--| (11)
+|              |  |           |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW746R
+|              |  |        +--| (1)
+|              |  |        |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW371B
+|              |  |        |  +--| (26)
+|              |  |        |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW719R
+|              |  |     +--| (3)
+|              |  |     |  |        +--Amerodectes_ischyros_ex_Setophaga_virens_BTNW492R
+|              |  |     |  |     +--| (14)
+|              |  |     |  |     |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW068
+|              |  |     |  |  +--| (38)
+|              |  |     |  |  |  |              +--Amerodectes_ischyros_ex_Setophaga_magnolia_MAWA362A
+|              |  |     |  |  |  |           +--| (36)
+|              |  |     |  |  |  |           |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW748R
+|              |  |     |  |  |  |        +--| (10)
+|              |  |     |  |  |  |        |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW718R
+|              |  |     |  |  |  |        |  +--| (82)
+|              |  |     |  |  |  |        |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW751R
+|              |  |     |  |  |  |     +--| (16)
+|              |  |     |  |  |  |     |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW069
+|              |  |     |  |  |  |     |  +--| (45)
+|              |  |     |  |  |  |     |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW721R
+|              |  |     |  |  |  |  +--| (18)
+|              |  |     |  |  |  |  |  |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW687R
+|              |  |     |  |  |  |  |  +--| (75)
+|              |  |     |  |  |  |  |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW736R
+|              |  |     |  |  |  +--| (26)
+|              |  |     |  |  |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW735R
+|              |  |     |  +--| (13)
+|              |  |     |     |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW691R
+|              |  |     |     +--| (99)
+|              |  |     |        +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW733R
+|              |  |  +--| (5)
+|              |  |  |  |  +--Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA928R
+|              |  |  |  +--| (14)
+|              |  |  |     +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW750R
+|              |  +--| (11)
+|              |     |           +**Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW850R
+|              |     |        +**|
+|              |     |        |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW734R
+|              |     |     +**|
+|              |     |     |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW737R
+|              |     |  +--|
+|              |     |  |  +**Amerodectes_ischyros_ex_Setophaga_cerulea_CERW720R
+|              |     +--| (19)
+|              |        +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW358A
+|           +--| (60)
+|           |  +--Amerodectes_ischyros_ex_Cardellina_canadensis_CAWA366A
+|        +--| (69)
+|        |  +--Amerodectes_ischyros_ex_Setophaga_cerulea_CERW578R
+|     +--| (53)
+|     |  |     +--AM88_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151C
+|     |  |  +--| (61)
+|     |  |  |  +--AM89_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW152B
+|     |  +--| (80)
+|     |     |  +--AM101_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW075C
+|     |     +--| (62)
+|     |        |                                      +--AM168_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100A
+|     |        |                                   +--| (93)
+|     |        |                                   |  +--AM169_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100C
+|     |        |                                +--| (19)
+|     |        |                                |  |        +--AM170_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA262A
+|     |        |                                |  |     +--| (66)
+|     |        |                                |  |     |  +--AM146_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375A
+|     |        |                                |  |  +--| (52)
+|     |        |                                |  |  |  |  +--AM171_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329A
+|     |        |                                |  |  |  +--| (100)
+|     |        |                                |  |  |     +--AM172_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329C
+|     |        |                                |  +--| (29)
+|     |        |                                |     |  +--AM149_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376B
+|     |        |                                |     +--| (40)
+|     |        |                                |        +--Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA970R
+|     |        |                             +--| (25)
+|     |        |                             |  |  +--Tyrannidectes_charitomenos_ex_Setophaga_americana_NOPA676R
+|     |        |                             |  +--| (89)
+|     |        |                             |     +--Tyrannidectes_charitomenos_ex_Setophaga_virens_BTNW765P
+|     |        |                          +--| (50)
+|     |        |                          |  +--AM148_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376A
+|     |        |                       +--| (45)
+|     |        |                       |  +--AM147_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375C
+|     |        |           +-----------| (100)
+|     |        |           |           +--Tyrannidectes_aff_charitomenos_ex_Setophaga_discolor_PRAW770P
+|     |        |       +---| (100)
+|     |        |       |   |                     +--AM72_Proctophyllodes_quadratus_ex_Setophaga_ruticilla_AMRE138A
+|     |        |       |   |                  +--| (50)
+|     |        |       |   |                  |  |        +--AM85_Proctophyllodes_quadratus_ex_Setophaga_caerulescens_BTBW152A
+|     |        |       |   |                  |  |     +--| (69)
+|     |        |       |   |                  |  |     |  +--AM160_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA167C
+|     |        |       |   |                  |  |  +--| (50)
+|     |        |       |   |                  |  |  |  |  +--AM64_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA301B
+|     |        |       |   |                  |  |  |  +--| (87)
+|     |        |       |   |                  |  |  |     |  +--AM158_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA284A
+|     |        |       |   |                  |  |  |     +--| (100)
+|     |        |       |   |                  |  |  |        +--AM159_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA294A
+|     |        |       |   |                  |  +--| (36)
+|     |        |       |   |                  |     |     +--AM116_Proctophyllodes_quadratus_ex_Setophaga_pensylvanica_CSWA386A
+|     |        |       |   |                  |     |  +--| (99)
+|     |        |       |   |                  |     |  |  +--Proctophyllodes_quadratus_ex_Setophaga_petechia_YEWA941P_Pr
+|     |        |       |   |                  |     +--| (79)
+|     |        |       |   |                  |        +--AM157_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA283A
+|     |        |       |   |            +-----| (96)
+|     |        |       |   |            |     +--AM132_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA316A
+|     |        |       |   |     +------| (98)
+|     |        |       |   |     |      |    +--AM174_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA383A
+|     |        |       |   |     |      +----| (99)
+|     |        |       |   |     |           |  +--AM176_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA389A
+|     |        |       |   |     |           +--| (88)
+|     |        |       |   |     |              +--AM177_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA390A
+|     |        |       |   +-----| (100)
+|     |        |       |         +---------------------------------------Trouessartia_sp_ex_Setophaga_petechia_YEWA941P_Tr
+|     |        |  +----| (100)
+|     |        |  |    |                                                  +--AM70_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW090B
+|     |        |  |    |                                               +--| (49)
+|     |        |  |    |                                               |  |  +--AM55_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313A
+|     |        |  |    |                                               |  +--| (38)
+|     |        |  |    |                                               |     +--AM153_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW330
+|     |        |  |    |                                            +--| (36)
+|     |        |  |    |                                            |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R1_pw
+|     |        |  |    |                                         +--| (57)
+|     |        |  |    |                                         |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW808R
+|     |        |  |    |                                      +--| (15)
+|     |        |  |    |                                      |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW810R
+|     |        |  |    |                                   +--| (6)
+|     |        |  |    |                                   |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW671R
+|     |        |  |    |                                   |  +--| (69)
+|     |        |  |    |                                   |     |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW831R
+|     |        |  |    |                                   |     +--| (78)
+|     |        |  |    |                                   |        +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R20_pw
+|     |        |  |    |                                +--| (24)
+|     |        |  |    |                                |  |        +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW753R
+|     |        |  |    |                                |  |     +--|
+|     |        |  |    |                                |  |     |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW833R
+|     |        |  |    |                                |  |  +--| (55)
+|     |        |  |    |                                |  |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW825R
+|     |        |  |    |                                |  +--| (11)
+|     |        |  |    |                                |     |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW807R
+|     |        |  |    |                                |     |  +--| (91)
+|     |        |  |    |                                |     |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW813R
+|     |        |  |    |                                |     +--| (12)
+|     |        |  |    |                                |        +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R20_pw
+|     |        |  |    |                             +--| (54)
+|     |        |  |    |                             |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R5_pw
+|     |        |  |    |                          +--| (38)
+|     |        |  |    |                          |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R1_pw
+|     |        |  |    |                          |  +--| (98)
+|     |        |  |    |                          |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R5_pw
+|     |        |  |    |                       +--| (53)
+|     |        |  |    |                       |  |              +--AM154_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW267
+|     |        |  |    |                       |  |           +--| (86)
+|     |        |  |    |                       |  |           |  +--AM56_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313C
+|     |        |  |    |                       |  |        +--| (63)
+|     |        |  |    |                       |  |        |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW685R
+|     |        |  |    |                       |  |     +--| (73)
+|     |        |  |    |                       |  |     |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R20_pw
+|     |        |  |    |                       |  |  +--| (26)
+|     |        |  |    |                       |  |  |  |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW690R
+|     |        |  |    |                       |  |  |  |  +--| (46)
+|     |        |  |    |                       |  |  |  |  |  |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW709R
+|     |        |  |    |                       |  |  |  |  |  |  +--| (89)
+|     |        |  |    |                       |  |  |  |  |  |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW978R
+|     |        |  |    |                       |  |  |  |  |  +--| (54)
+|     |        |  |    |                       |  |  |  |  |     |                       +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW754R
+|     |        |  |    |                       |  |  |  |  |     |                    +**|
+|     |        |  |    |                       |  |  |  |  |     |                    |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW977R
+|     |        |  |    |                       |  |  |  |  |     |                 +**|
+|     |        |  |    |                       |  |  |  |  |     |                 |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R5_pw
+|     |        |  |    |                       |  |  |  |  |     |              +--|
+|     |        |  |    |                       |  |  |  |  |     |              |  +**Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW974R
+|     |        |  |    |                       |  |  |  |  |     |           +--| (80)
+|     |        |  |    |                       |  |  |  |  |     |           |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW805R
+|     |        |  |    |                       |  |  |  |  |     |        +--| (27)
+|     |        |  |    |                       |  |  |  |  |     |        |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R1_pw
+|     |        |  |    |                       |  |  |  |  |     |     +--| (40)
+|     |        |  |    |                       |  |  |  |  |     |     |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW809R
+|     |        |  |    |                       |  |  |  |  |     |  +--| (84)
+|     |        |  |    |                       |  |  |  |  |     |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R5_pw
+|     |        |  |    |                       |  |  |  |  |     +--| (85)
+|     |        |  |    |                       |  |  |  |  |        +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW756R
+|     |        |  |    |                       |  |  |  +--| (33)
+|     |        |  |    |                       |  |  |     |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW752R
+|     |        |  |    |                       |  |  |     |  +--| (94)
+|     |        |  |    |                       |  |  |     |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW976R
+|     |        |  |    |                       |  |  |     +--| (27)
+|     |        |  |    |                       |  |  |        +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R20_pw
+|     |        |  |    |                       |  +--| (31)
+|     |        |  |    |                       |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW829R
+|     |        |  |    |                    +--| (38)
+|     |        |  |    |                    |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW759R
+|     |        |  |    |                    |  +--| (98)
+|     |        |  |    |                    |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R1_pw
+|     |        |  |    |                 +--| (29)
+|     |        |  |    |                 |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW758R
+|     |        |  |    |              +--| (70)
+|     |        |  |    |              |  |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW672R
+|     |        |  |    |              |  +--| (72)
+|     |        |  |    |              |     +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW828R
+|     |        |  |    |           +--| (94)
+|     |        |  |    |           |  +--Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW684R
+|     |        |  |    |        +--| (100)
+|     |        |  |    |        |  +--AM155_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW310
+|     |        |  |    |     +--| (91)
+|     |        |  |    |     |  |         +--AM107_Amerodectes_hribari_ex_Geothlypis_trichas_COYE096B
+|     |        |  |    |     |  |      +--| (98)
+|     |        |  |    |     |  |      |  +--Amerodectes_hribari_ex_Geothlypis_trichas_COYE868R
+|     |        |  |    |     |  |   +--| (99)
+|     |        |  |    |     |  |   |  +--AM110_Amerodectes_hribari_ex_Geothlypis_trichas_COYE164C
+|     |        |  |    |     |  +---| (100)
+|     |        |  |    |     |      |     +--Amerodectes_hribari_ex_Oporornis_agilis_CONW930R
+|     |        |  |    |     |      |  +--| (100)
+|     |        |  |    |     |      |  |  +--Amerodectes_hribari_ex_Setophaga_pinus_PIWA948R
+|     |        |  |    |     |      +--| (78)
+|     |        |  |    |     |         +--Amerodectes_hribari_ex_Geothlypis_philadelphia_MOWA611R
+|     |        |  |    |  +--| (94)
+|     |        |  |    |  |  |     +--AM131_Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA305A
+|     |        |  |    |  |  |  +--| (100)
+|     |        |  |    |  |  |  |  |  +--Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA315A
+|     |        |  |    |  |  |  |  +--| (99)
+|     |        |  |    |  |  |  |     +--Amerodectes_jonesborensis_ex_Parkesia_motacilla_LOWA438A
+|     |        |  |    |  |  +--| (98)
+|     |        |  |    |  |     |                       +--AM122_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094A
+|     |        |  |    |  |     |                    +--| (100)
+|     |        |  |    |  |     |                    |  +--AM126_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094B
+|     |        |  |    |  |     |                 +--| (15)
+|     |        |  |    |  |     |                 |  +--AM129_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA350B
+|     |        |  |    |  |     |              +--| (12)
+|     |        |  |    |  |     |              |  |  +--AM136_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN165A
+|     |        |  |    |  |     |              |  +--| (55)
+|     |        |  |    |  |     |              |     |  +--AM210_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN031P10
+|     |        |  |    |  |     |              |     +--| (82)
+|     |        |  |    |  |     |              |        +--AM142_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN251A
+|     |        |  |    |  |     |           +--| (42)
+|     |        |  |    |  |     |           |  |     +--AM196_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA064A
+|     |        |  |    |  |     |           |  |  +--| (87)
+|     |        |  |    |  |     |           |  |  |  +--AM200_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN191A
+|     |        |  |    |  |     |           |  +--| (26)
+|     |        |  |    |  |     |           |     +--AM143_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN318C
+|     |        |  |    |  |     |        +--| (49)
+|     |        |  |    |  |     |        |  |  +--AM140_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN179
+|     |        |  |    |  |     |        |  +--| (89)
+|     |        |  |    |  |     |        |     |  +--Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN614P
+|     |        |  |    |  |     |        |     +--| (62)
+|     |        |  |    |  |     |        |        |  +--Amerodectes_seiurus_ex_Leiothlypis_ruficapilla_NAWA328A
+|     |        |  |    |  |     |        |        +--| (50)
+|     |        |  |    |  |     |        |           +--Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA584R
+|     |        |  |    |  |     |     +--| (56)
+|     |        |  |    |  |     |     |  +--AM123_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349A
+|     |        |  |    |  |     |  +--| (58)
+|     |        |  |    |  |     |  |  |  +--AM128_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349B
+|     |        |  |    |  |     |  |  +--| (97)
+|     |        |  |    |  |     |  |     +--AM139_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN194A
+|     |        |  |    |  |     +--| (100)
+|     |        |  |    |  |        +--AM124_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA351A
+|     |        |  |    +--| (99)
+|     |        |  |       |     +--Amerodectes_helmitheros_ex_Limnothlypis_swainsonii_SWWA980R
+|     |        |  |       |  +--| (100)
+|     |        |  |       |  |  +--Amerodectes_helmitheros_ex_Helmitheros_vermivorum_WEWA727R
+|     |        |  |       +--| (100)
+|     |        |  |          +--Amerodectes_sp_n_1_ex_Mniotilta_varia_BAWW968P
+|     |        +--| (99)
+|     |           +----Amerodectes_aff_ischyros_ex_Setophaga_castanea_BBWA971A
+|  +--| (37)
+|  |  |     +--AM91_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW154B
+|  |  |  +--| (70)
+|  |  |  |  |  +--AM190_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW065A
+|  |  |  |  +--| (71)
+|  |  |  |     +--AM175_Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA388A
+|  |  +--| (14)
+|  |     +--AM151_Amerodectes_ischyros_ex_Setophaga_discolor_PRAW380A
++--| (93)
+|  +--AM118_Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA367B
+|
++--AM100_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW072C
+
+
+Consensus tree in newick format: 
+
+(AM73_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE139A:0.0028310226,(((((((((((AM80_Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE147:0.0081377795,(((AM90_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW153C:0.0090564447,Amerodectes_ischyros_ex_Vermivora_cyanoptera_BWWA412R:0.0047233388)92:0.0022799007,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW577R:0.0055512317)41:0.0000022955,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW575R:0.0000022955)40:0.0000022955)22:0.0000022955,(AM84_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151A:0.0043920701,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW747R:0.0018230623)88:0.0009348684)67:0.0013697693,((((AM192_Amerodectes_ischyros_haplotype_2_ex_Setophaga_cerulea_CERW074A:0.0119548690,Amerodectes_ischyros_ex_Setophaga_fusca_BLBW861R:0.0013714391)74:0.0000022971,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW744R:0.0020463815)54:0.0006869747,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW070:0.0063886068,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW723R:0.0014581166)97:0.0006095617)70:0.0006745572,(Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA939R:0.0006838803,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW702R:0.0013664139)24:0.0000022955)28:0.0000022955)57:0.0006821462,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW739R:0.0006838203)28:0.0000022955,(Amerodectes_ischyros_ex_Setophaga_ruticilla_AMRE967R:0.0006832292,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW067A:0.0006820879)20:0.0000022955)5:0.0000022955,((((((Amerodectes_ischyros_ex_Setophaga_tigrina_CMWA952R:0.0013719255,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW717R:0.0000022955)71:0.0006827873,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW746R:0.0006821514)11:0.0000022955,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW371B:0.0013691857,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW719R:0.0055879717)26:0.0000022955)1:0.0000022955,(((Amerodectes_ischyros_ex_Setophaga_virens_BTNW492R:0.0041740247,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW068:0.0049625928)14:0.0006191625,(((((Amerodectes_ischyros_ex_Setophaga_magnolia_MAWA362A:0.0036574945,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW748R:0.0050603768)36:0.0005065894,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW718R:0.0006835237,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW751R:0.0006921843)82:0.0006814656)10:0.0000022955,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW069:0.0034436418,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW721R:0.0000022955)45:0.0006802553)16:0.0000022955,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW687R:0.0000022955,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW736R:0.0000022955)75:0.0000022955)18:0.0000022955,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW735R:0.0006808387)26:0.0000022955)38:0.0006800535,(Amerodectes_ischyros_ex_Setophaga_cerulea_CERW691R:0.0000022955,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW733R:0.0000022955)99:0.0006838498)13:0.0000022955)3:0.0000022955,(Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA928R:0.0006830795,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW750R:0.0006812844)14:0.0000022955)5:0.0000022955,((((Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW850R:0.0000000000,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW734R:0.0000000000):0.0000000000,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW737R:0.0000000000):0.0000000000,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW720R:0.0000000000):0.0000022955,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW358A:0.0000022955)19:0.0000022955)11:0.0000022955)47:0.0000022955,Amerodectes_ischyros_ex_Cardellina_canadensis_CAWA366A:0.0048738283)60:0.0013646585,Amerodectes_ischyros_ex_Setophaga_cerulea_CERW578R:0.0000025191)69:0.0008447692,((AM88_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW151C:0.0017548874,AM89_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW152B:0.0035191783)61:0.0000022955,(AM101_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW075C:0.0000022971,(((((((((AM168_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100A:0.0035946480,AM169_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA100C:0.0036242859)93:0.0027032348,(((AM170_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA262A:0.0080375871,AM146_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375A:0.0008936368)66:0.0008559116,(AM171_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329A:0.0017322173,AM172_Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA329C:0.0000022955)100:0.0044021058)52:0.0000022955,(AM149_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376B:0.0026651293,Tyrannidectes_charitomenos_ex_Setophaga_dominica_YTWA970R:0.0007860535)40:0.0015326892)29:0.0007700370)19:0.0007612236,(Tyrannidectes_charitomenos_ex_Setophaga_americana_NOPA676R:0.0027824821,Tyrannidectes_charitomenos_ex_Setophaga_virens_BTNW765P:0.0020843066)89:0.0010465778)25:0.0000026242,AM148_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW376A:0.0044266154)50:0.0049616744,AM147_Tyrannidectes_charitomenos_ex_Setophaga_discolor_PRAW375C:0.0047212562)45:0.0057127794,Tyrannidectes_aff_charitomenos_ex_Setophaga_discolor_PRAW770P:0.0521912475)100:0.2786428879,((((AM72_Proctophyllodes_quadratus_ex_Setophaga_ruticilla_AMRE138A:0.0095215010,(((AM85_Proctophyllodes_quadratus_ex_Setophaga_caerulescens_BTBW152A:0.0080215733,AM160_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA167C:0.0168780634)69:0.0039241137,(AM64_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA301B:0.0088886693,(AM158_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA284A:0.0092375904,AM159_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA294A:0.0087131975)100:0.0040733378)87:0.0029861844)50:0.0000023527,((AM116_Proctophyllodes_quadratus_ex_Setophaga_pensylvanica_CSWA386A:0.0125859329,Proctophyllodes_quadratus_ex_Setophaga_petechia_YEWA941P_Pr:0.0074015546)99:0.0011978581,AM157_Proctophyllodes_quadratus_ex_Leiothlypis_peregrina_TEWA283A:0.0093604985)79:0.0027084035)36:0.0013007340)50:0.0031734012,AM132_Proctophyllodes_quadratus_ex_Parkesia_noveboracensis_NOWA316A:0.0055570794)96:0.1451957891,(AM174_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA383A:0.0033429772,(AM176_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA389A:0.0042172948,AM177_Proctophyllodes_basal_quadratus_ex_Vermivora_chrysoptera_GWWA390A:0.0038834035)88:0.0064525444)99:0.1160323452)98:0.1514165837,Trouessartia_sp_ex_Setophaga_petechia_YEWA941P_Tr:0.8677867172)100:0.1355263667)100:0.0907692060,(((((((((((((((((AM70_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW090B:0.0029211267,(AM55_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313A:0.0019310162,AM153_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW330:0.0036646917)38:0.0000022971)49:0.0012037603,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R1_pw:0.0007539523)36:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW808R:0.0000022955)57:0.0007540957,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW810R:0.0030393701)15:0.0000022955,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW671R:0.0007616865,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW831R:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R20_pw:0.0000022955)78:0.0000022955)69:0.0007583403)6:0.0000022955,(((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW753R:0.0000000000,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW833R:0.0000000000):0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW825R:0.0000022955)55:0.0000022955,((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW807R:0.0038433240,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW813R:0.0000022955)91:0.0007580412,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R20_pw:0.0007577448)12:0.0000022955)11:0.0000022955)24:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW954R5_pw:0.0086828309)54:0.0007539846,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R1_pw:0.0053870566,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R5_pw:0.0000022955)98:0.0007521320)38:0.0000022955,(((((AM154_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW267:0.0036376737,AM56_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW313C:0.0019176816)86:0.0012073989,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW685R:0.0030292848)63:0.0000022971,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R20_pw:0.0000022955)73:0.0007478781,((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW690R:0.0000022955,((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW709R:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW978R:0.0000022955)89:0.0007605073,((((((((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW754R:0.0000000000,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW977R:0.0000000000):0.0000000000,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R5_pw:0.0000000000):0.0000000000,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW974R:0.0000000000):0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW805R:0.0000022955)80:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R1_pw:0.0022775967)27:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW809R:0.0030236329)40:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW984R5_pw:0.0030426006)84:0.0007486298,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW756R:0.0000022955)85:0.0007521124)54:0.0007475272)46:0.0007455874,((Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW752R:0.0015134913,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW976R:0.0000022955)94:0.0007475823,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW981R20_pw:0.0053324630)27:0.0000022955)33:0.0007474708)26:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW829R:0.0007513905)31:0.0007507416)53:0.0007540349,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW759R:0.0035159843,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW953R1_pw:0.0038771127)98:0.0026466829)38:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW758R:0.0000022955)29:0.0000022955,(Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW672R:0.0000022955,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW828R:0.0007625501)72:0.0007582927)70:0.0015141586,Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW684R:0.0000022955)94:0.0046748202,AM155_Amerodectes_protonotaria_ex_Protonotaria_citrea_PROW310:0.0092549530)100:0.0722022299,(((AM107_Amerodectes_hribari_ex_Geothlypis_trichas_COYE096B:0.0043704894,Amerodectes_hribari_ex_Geothlypis_trichas_COYE868R:0.0072962214)98:0.0007434107,AM110_Amerodectes_hribari_ex_Geothlypis_trichas_COYE164C:0.0036913760)99:0.0100238566,((Amerodectes_hribari_ex_Oporornis_agilis_CONW930R:0.0000022955,Amerodectes_hribari_ex_Setophaga_pinus_PIWA948R:0.0014797689)100:0.0015473192,Amerodectes_hribari_ex_Geothlypis_philadelphia_MOWA611R:0.0044819659)78:0.0000020265)100:0.0962253709)91:0.0124781849,((AM131_Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA305A:0.0019462814,(Amerodectes_jonesborensis_ex_Parkesia_noveboracensis_NOWA315A:0.0056107946,Amerodectes_jonesborensis_ex_Parkesia_motacilla_LOWA438A:0.0047108093)99:0.0074233025)100:0.0622291667,((((((((AM122_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094A:0.0000022955,AM126_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA094B:0.0000022955)100:0.0069085902,AM129_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA350B:0.0009542562)15:0.0000022955,(AM136_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN165A:0.0048238119,(AM210_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN031P10:0.0048724298,AM142_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN251A:0.0049473934)82:0.0009003396)55:0.0000022955)12:0.0000022955,((AM196_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA064A:0.0048506156,AM200_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN191A:0.0000022955)87:0.0009506501,AM143_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN318C:0.0028864163)26:0.0000022955)42:0.0000022955,(AM140_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN179:0.0057437752,(Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN614P:0.0000022955,(Amerodectes_seiurus_ex_Leiothlypis_ruficapilla_NAWA328A:0.0015319010,Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA584R:0.0007629772)50:0.0000022955)62:0.0000027917)89:0.0009221101)49:0.0000026434,AM123_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349A:0.0038482267)56:0.0009264578,(AM128_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA349B:0.0009536034,AM139_Amerodectes_seiurus_ex_Seiurus_aurocapilla_OVEN194A:0.0019288111)97:0.0009542852)58:0.0000023248,AM124_Amerodectes_seiurus_ex_Geothlypis_formosa_KEWA351A:0.0019093715)100:0.0638991767)98:0.0256630583)94:0.0135924495,((Amerodectes_helmitheros_ex_Limnothlypis_swainsonii_SWWA980R:0.0063102385,Amerodectes_helmitheros_ex_Helmitheros_vermivorum_WEWA727R:0.0000029470)100:0.0673763284,Amerodectes_sp_n_1_ex_Mniotilta_varia_BAWW968P:0.0689609515)100:0.0533637722)99:0.0607065509)100:0.1156996873,Amerodectes_aff_ischyros_ex_Setophaga_castanea_BBWA971A:0.1089276275)99:0.0755644264)62:0.0025636724)80:0.0025564623)53:0.0000022955,((AM91_Amerodectes_ischyros_ex_Setophaga_caerulescens_BTBW154B:0.0053738061,(AM190_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW065A:0.0096333982,AM175_Amerodectes_ischyros_ex_Vermivora_chrysoptera_GWWA388A:0.0058477868)71:0.0004419135)70:0.0008639318,AM151_Amerodectes_ischyros_ex_Setophaga_discolor_PRAW380A:0.0061810542)14:0.0000022955)37:0.0000022955,AM118_Amerodectes_ischyros_ex_Setophaga_pensylvanica_CSWA367B:0.0043866304)93:0.0006838674,AM100_Amerodectes_ischyros_ex_Setophaga_cerulea_CERW072C:0.0073690660);
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep  1 13:52:29 2022
+Total CPU time used: 561.370906 seconds (0h:9m:21s)
+Total wall-clock time used: 204.4085097 seconds (0h:3m:24s)
+
