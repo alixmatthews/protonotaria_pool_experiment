@@ -1,0 +1,60 @@
+cd /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123
+
+module load java/sunjdk_1.8.0 # for gatk and picard
+module load gatk/4.2.6.1
+module load fastqc/0.11.5 # workaround for picard-tools
+module load picard-tools/2.17.10
+module load python/anaconda-3.9
+source /share/apps/bin/conda-3.9.sh
+conda activate BCFTools
+
+FILE=PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.vcf
+
+mkdir maf05_dp10_ld001
+cd maf05_dp10_ld001
+
+for sample in `bcftools query -l ../$FILE`
+do
+bcftools view -c1 -H -s $sample -o ${sample}.vcf ../$FILE
+cat $sample.vcf | cut -f1,2 > $sample.count
+done
+
+
+awk -v OFS=',' '{print FILENAME, $0}' *.count > maf05_dp10_ld001.count
+
+
+
+
+
+
+cd ../
+
+FILE=PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.vcf
+
+mkdir maf05_dp10_ld99
+cd maf05_dp10_ld99
+
+for sample in `bcftools query -l ../$FILE`
+do
+bcftools view -c1 -H -s $sample -o ${sample}.vcf ../$FILE
+cat $sample.vcf | cut -f1,2 > $sample.count
+done
+
+
+awk -v OFS=',' '{print FILENAME, $0}' *.count > maf05_dp10_ld99.count
+
+
+
+
+
+
+#### then can do this to get Per-sample SNP counts
+cd /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123
+
+
+bcftools stats -s - PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.vcf
+
+
+bcftools stats -s - PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.vcf
+
+

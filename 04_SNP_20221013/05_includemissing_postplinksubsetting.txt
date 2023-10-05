@@ -1,0 +1,44 @@
+module load java/sunjdk_1.8.0 # for gatk and picard
+module load gatk/4.2.6.1
+module load fastqc/0.11.5 # workaround for picard-tools
+module load picard-tools/2.17.10
+module load python/anaconda-3.9
+source /share/apps/bin/conda-3.9.sh
+conda activate BCFTools
+
+## Select the variants from prune.in (variants to keep; prune.out are variants that are to be removed because potentially linked). So the next step in this section is to select only the prune.in variants to make the .vcf and the gzip this for import into R
+
+
+
+## Duplicating/renaming the prune.in file (variants to keep, file looks like 'CHR:POS') as .intervals for GATK to recognize
+
+cd /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123
+
+cp PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.in PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.intervals
+cp PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.in PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.intervals
+
+
+
+
+
+
+
+## need to index the mafXX_dpXX .vcf (vcf above the ld pruning)
+
+gatk IndexFeatureFile --input /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10.vcf.gz
+
+
+
+
+
+
+
+
+
+## then can do SelectVariants
+
+gatk SelectVariants --variant /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10.vcf.gz --intervals /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.intervals --output /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld001.prune.vcf
+
+
+gatk SelectVariants --variant /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10.vcf.gz --intervals /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.intervals --output /scrfs/storage/amatthews/20210816_projects/20210816_exp/04_SNP_20221013/RESULTS_PROW_EXP/vcf/PROW_EXP_plink_includemissing_LD_PCA_20230123/PROW_EXP_ALL_renamed_q30_minac1_maf05_dp10_ld99.prune.vcf
+
