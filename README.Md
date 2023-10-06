@@ -1,6 +1,7 @@
 # Feather mite genomics experiment
 Alix Matthews
 
+Associated manuscript: (in review)
 
 As a general overview, this project aims to compare the sequencing efficiency and population genetics of an experimental set of feather mite samples (1 mite vs. 5 mites vs. 20 mites in a single extraction - each from the same feather - of *Amerodectes protonotaria*).
 
@@ -44,4 +45,7 @@ SNP pipeline for all samples
 
 All files needed for the FINAL analyses. Lots of intermediate/unused files exist (in my other private repo, `alixmatthews/20210816_projects/20210816_exp`), but not in this cleaned up repo :)
 
+## final_figures
+
+Final figures used in publication
 
