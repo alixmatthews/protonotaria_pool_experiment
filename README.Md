@@ -11,9 +11,10 @@ Separate READMEs for each step, but as a general overview, this project aims to 
 - `20210816_exp_filenames_SNPpipeline.txt`: all samples, just added an extra useful column, used in `04_SNP_20221013` steps
 - `20210816_exp_filenames_SNPpipeline_PROW953_only.txt`: only PROW953R1, which had a lot of contamination; used in `01_RemoveBacteria_20220901` steps
 
----
 
-## Directories below and order of operations
+
+
+### Directories below and order of operations
 
 ## 00_PP_20210903
 
