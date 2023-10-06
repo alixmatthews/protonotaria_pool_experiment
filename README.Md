@@ -6,10 +6,10 @@ Separate READMEs for each step, but as a general overview, this project aims to 
 
 ## Files needed at various steps:
 - These may or may not be in the subdirectories
-`20210816_exp_filenames.txt`: all files, for the initial PP steps; used in `00_PP_20210903` steps
-`20210816_exp_filenames_PROW953_only.txt`: only PROW953R1, which had a lot of contamination; used in `01_aTRAM_COI_20220901` step
-`20210816_exp_filenames_SNPpipeline.txt`: all samples, just added an extra useful column, used in `04_SNP_20221013` steps
-`20210816_exp_filenames_SNPpipeline_PROW953_only.txt`: only PROW953R1, which had a lot of contamination; used in `01_RemoveBacteria_20220901` steps
+- `20210816_exp_filenames.txt`: all files, for the initial PP steps; used in `00_PP_20210903` steps
+- `20210816_exp_filenames_PROW953_only.txt`: only PROW953R1, which had a lot of contamination; used in `01_aTRAM_COI_20220901` step
+- `20210816_exp_filenames_SNPpipeline.txt`: all samples, just added an extra useful column, used in `04_SNP_20221013` steps
+- `20210816_exp_filenames_SNPpipeline_PROW953_only.txt`: only PROW953R1, which had a lot of contamination; used in `01_RemoveBacteria_20220901` steps
 
 --
 
