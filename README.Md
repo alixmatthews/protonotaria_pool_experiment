@@ -2,7 +2,7 @@
 Alix Matthews
 
 
-Separate READMEs for each step, but as a general overview, this project aims to compare the sequencing efficiency and population genetics of an experimental set of feather mite samples (1 mite vs. 5 mites vs. 20 mites in a single extraction - each from the same feather - of *Amerodectes protonotaria*).
+As a general overview, this project aims to compare the sequencing efficiency and population genetics of an experimental set of feather mite samples (1 mite vs. 5 mites vs. 20 mites in a single extraction - each from the same feather - of *Amerodectes protonotaria*).
 
 ## Files needed at various steps:
 - These may or may not be in the subdirectories
