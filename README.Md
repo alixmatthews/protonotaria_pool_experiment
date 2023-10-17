@@ -1,7 +1,7 @@
 # Feather mite genomics experiment
 Alix Matthews
 
-Associated manuscript: (in review)
+Associated manuscript: https://doi.org/10.3390/life13102054
 
 As a general overview, this project aims to compare the sequencing efficiency and population genetics of an experimental set of feather mite samples (1 mite vs. 5 mites vs. 20 mites in a single extraction - each from the same feather - of *Amerodectes protonotaria*).
 
